@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<!--
+  NetFence privacy policy, ready to publish.
+
+  Roadmap 0.4. Host this file at a publicly reachable HTTPS address, then put that
+  same address in two places: R.string.privacy_policy_url in the app, and the
+  Privacy policy field in the Play Console.
+
+  Every statement below was written from this project's own code. Before editing a
+  sentence, check it still matches the file named next to it in DATA_SAFETY.md.
+
+  Fill in the two placeholders marked FILL IN before publishing.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NetFence - Privacy Policy</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    line-height: 1.65;
+    max-width: 48rem;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    color: #1b1b1b;
+    background: #ffffff;
+  }
+  h1 { font-size: 1.75rem; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.2rem; margin-top: 2.25rem; }
+  h3 { font-size: 1.02rem; margin-top: 1.5rem; }
+  .meta { color: #5c5c5c; font-size: 0.92rem; margin-top: 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.95rem; }
+  th, td { border: 1px solid #d7d7d7; padding: 0.5rem 0.6rem; text-align: left; vertical-align: top; }
+  th { background: #f4f4f4; }
+  code { background: #f4f4f4; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.92em; }
+  ul { padding-left: 1.3rem; }
+  .note { background: #f6f8fa; border-left: 4px solid #8a8a8a; padding: 0.75rem 1rem; margin: 1.25rem 0; }
+  footer { margin-top: 3rem; font-size: 0.9rem; color: #5c5c5c; }
+</style>
+</head>
+<body>
+
+<h1>NetFence - Privacy Policy</h1>
+<p class="meta">
+  Application: NetFence (<code>com.netfence.firewall</code>)<br>
+  Effective date: FILL IN (for example, 1 November 2026)<br>
+  Last updated: FILL IN
+</p>
+
+<h2>1. Summary</h2>
+<p>
+  NetFence is an on-device firewall that lets you decide which apps on your phone may
+  use Wi-Fi, mobile data and roaming. It has no user accounts, no sign-in and no
+  server of its own. Your firewall rules, schedules, profiles, per-app data usage and
+  activity log stay on your phone.
+</p>
+<p>
+  Three things do leave the device, and they are listed in full in section 4:
+  an advertising identifier used by Google AdMob to show ads, and - only if you
+  switch it on yourself - crash reports and app-usage reports sent to Firebase.
+</p>
+
+<h2>2. Who is responsible for this app</h2>
+<p>
+  This app is published by FILL IN (your name or company name, as it appears on
+  your Google Play developer account).
+</p>
+<p>
+  Privacy contact: <a href="mailto:FILL-IN@example.com">FILL-IN@example.com</a>
+</p>
+
+<h2>3. What stays on your phone and is never transmitted</h2>
+<p>
+  The following is stored only in NetFence's own private storage on your device and
+  is never sent to us or to anyone else:
+</p>
+<ul>
+  <li>Your per-app rules: which apps are blocked, and whether each is allowed on Wi-Fi, mobile data and roaming.</li>
+  <li>Screen-on-only rules, Strict Mode and temporary-allow settings.</li>
+  <li>Your schedules, schedule windows and which apps each schedule applies to.</li>
+  <li>Your saved profiles.</li>
+  <li>Per-app data-usage figures and the weekly and monthly history shown on the Data Usage screen.</li>
+  <li>The activity log, which records what the app itself did - the firewall starting or stopping, rules you changed, automations that fired.</li>
+  <li>The names and package names of the apps installed on your phone, which are read only to build the list you see.</li>
+  <li>Your app-lock PIN, stored as a salted hash (see section 7).</li>
+  <li>Every other setting on the Settings screen.</li>
+</ul>
+<p>
+  NetFence contains no HTTP client of its own. No code written for this app can post
+  this information to any server. Uninstalling the app removes all of it from your
+  device.
+</p>
+
+<h2>4. What is collected, and by whom</h2>
+<p>
+  All three items below are collected and transmitted by Google software development
+  kits embedded in the app, over encrypted (HTTPS) connections to Google. None of
+  them ever includes your firewall rules, schedules, profiles, app names or browsing
+  activity.
+</p>
+
+<table>
+  <tr>
+    <th>Data</th>
+    <th>Who receives it</th>
+    <th>Purpose</th>
+    <th>Can you turn it off?</th>
+  </tr>
+  <tr>
+    <td>Advertising ID (a resettable device identifier) and the technical data the ads SDK needs to serve an ad</td>
+    <td>Google AdMob</td>
+    <td>Showing advertisements</td>
+    <td>The app is ad-supported, so this is active whenever ads are shown. You can reset or delete your Advertising ID in your Android settings, and where the law requires it you can change your ad-personalisation consent inside the app (section 5).</td>
+  </tr>
+  <tr>
+    <td>Crash reports and diagnostic reports</td>
+    <td>Google Firebase Crashlytics</td>
+    <td>Finding and fixing faults in the app</td>
+    <td>Yes. Off by default. Collected only while you keep "Help improve the app" switched on in Settings.</td>
+  </tr>
+  <tr>
+    <td>App-interaction and session events (for example, which screen was opened)</td>
+    <td>Google Firebase Analytics</td>
+    <td>Understanding how the app is used</td>
+    <td>Yes. Off by default, controlled by the same "Help improve the app" switch.</td>
+  </tr>
+</table>
+
+<p>
+  Crash reporting and analytics are disabled in the app's own configuration until you
+  switch them on, so a user who never opens that setting has nothing collected by
+  them. Switching the setting back off stops the collection.
+</p>
+
+<p>
+  What Google does with the data it receives is governed by its own terms:
+  <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Google Privacy Policy</a>,
+  <a href="https://support.google.com/admob/answer/6128543" rel="noopener" target="_blank">how Google uses data in AdMob</a>,
+  and <a href="https://firebase.google.com/support/privacy" rel="noopener" target="_blank">Firebase privacy and security</a>.
+</p>
+
+<h2>5. Advertising and your consent choices</h2>
+<p>
+  NetFence is free and supported by advertising. It includes a seven-day full trial
+  during which no ads are shown; the trial is measured from a timestamp stored on
+  your own device, and there is no purchase, subscription or billing of any kind in
+  the app.
+</p>
+<p>
+  Where the law requires a consent choice - for example in the European Economic
+  Area and the United Kingdom, and in United States states with an opt-out law - the
+  app shows Google's own consent form the first time it runs, through Google's User
+  Messaging Platform. Your answer is stored by that service. Where a consent control
+  is required for your region, Settings shows an "Ad privacy options" entry that
+  reopens the same form so you can change your answer at any time.
+</p>
+<p>
+  Refusing or withdrawing ad consent never reduces the app's protection. Every
+  firewall, scheduling, logging and diagnostic feature behaves exactly the same.
+</p>
+
+<h2>6. The VPN permission, and why it is not what it looks like</h2>
+<p>
+  NetFence works by creating a local VPN connection on your device. Android has no
+  other way for an app without root access to control which apps may reach the
+  network. This is a technical mechanism, not a VPN service:
+</p>
+<ul>
+  <li>There is no remote VPN server. The tunnel starts and ends inside your phone.</li>
+  <li>Your traffic is not routed through us, because there is no "us" to route it through - the app has no server.</li>
+  <li>In the default firewall mode the app does not read, inspect, record or forward the contents of your connections. Apps you allow are excluded from the tunnel and talk to the network directly; apps you block simply have no route.</li>
+</ul>
+
+<h3>6.1 The optional domain filter</h3>
+<p>
+  The app also offers a separate, optional domain-filter mode. It is off until you
+  switch it on, and switching it on replaces per-app blocking rather than adding to
+  it. While that mode is on:
+</p>
+<ul>
+  <li>NetFence answers your phone's domain-name lookups, so it sees the names being looked up - and only those names, never the contents of any connection.</li>
+  <li>A "Recent lookups" list holds at most the newest few hundred names, in memory only. It is emptied when the firewall stops and when you switch that list off, and it is never written to storage.</li>
+  <li>The only site name saved on your device is one you type in yourself as a rule.</li>
+  <li>Lookups that are not blocked are forwarded, unchanged, to the same network resolver your phone would have used anyway. They do not pass through any server of ours.</li>
+</ul>
+
+<h2>7. Your app-lock PIN and biometrics</h2>
+<p>
+  If you turn on the app lock, your PIN is never stored as text and never leaves your
+  device. Only a salted hash is kept (PBKDF2, with a random 32-byte salt generated on
+  your device), which is used solely to check a PIN you type on the lock screen.
+</p>
+<p>
+  If you enable fingerprint or face unlock, the authentication is performed entirely
+  by Android's own biometric system. NetFence never receives, stores or transmits
+  your fingerprint or face data.
+</p>
+<p>
+  Because there is no account behind the lock, there is no reset and no recovery for
+  a forgotten PIN. The app warns you about this before you choose one.
+</p>
+
+<h2>8. Permissions the app requests, and why</h2>
+<table>
+  <tr><th>Permission</th><th>Why NetFence needs it</th></tr>
+  <tr>
+    <td><code>INTERNET</code></td>
+    <td>Only for advertisements, and for crash and analytics reports if you have opted in. The firewall itself needs no internet access.</td>
+  </tr>
+  <tr>
+    <td><code>ACCESS_NETWORK_STATE</code></td>
+    <td>To tell whether you are on Wi-Fi or mobile data, and whether you are roaming, because your rules are set per transport.</td>
+  </tr>
+  <tr>
+    <td><code>FOREGROUND_SERVICE</code> and <code>FOREGROUND_SERVICE_SPECIAL_USE</code></td>
+    <td>The firewall has to keep running after you leave the app, which Android only permits as a foreground service with a visible status notification.</td>
+  </tr>
+  <tr>
+    <td><code>POST_NOTIFICATIONS</code></td>
+    <td>For the firewall status notification Android requires, the optional "Ask on open" prompt, and alerts telling you when blocking has actually stopped. Refusing it does not stop the firewall.</td>
+  </tr>
+  <tr>
+    <td><code>RECEIVE_BOOT_COMPLETED</code></td>
+    <td>To restore blocking after a restart, so you are not left believing apps are blocked when they are not.</td>
+  </tr>
+  <tr>
+    <td><code>QUERY_ALL_PACKAGES</code></td>
+    <td>The app's core purpose is per-app network control, so it must be able to list the apps installed on your phone. That list is shown to you and is never transmitted.</td>
+  </tr>
+  <tr>
+    <td><code>PACKAGE_USAGE_STATS</code> (usage access)</td>
+    <td>Optional, and granted by you in Android's own Settings. Used for the "Ask on open" feature and the per-app totals on the Data Usage screen. Features that need it stay switched off rather than breaking if you do not grant it, and the data is used on your device only.</td>
+  </tr>
+  <tr>
+    <td><code>AD_ID</code></td>
+    <td>Required by Google AdMob to serve advertisements.</td>
+  </tr>
+</table>
+<p>
+  NetFence requests no location permission, no contacts, calendar, microphone, camera
+  or storage permission, and no access to your messages, photos or files. Backups you
+  export and import are written and read through Android's own file picker, so you
+  choose the exact file and the app gains no wider access to your storage.
+</p>
+
+<h2>9. Backup and restore</h2>
+<p>
+  You can export your configuration to a file and import it again. The file is
+  created where you choose, on your own device or in your own cloud storage, by
+  Android's file picker. It is not uploaded anywhere by this app, and we never
+  receive it. The trial timestamp is deliberately excluded from an imported file.
+</p>
+
+<h2>10. Children</h2>
+<p>
+  NetFence is a general-purpose utility. It is not directed at children, it does not
+  knowingly collect information from children, and it does not ask for your age. The
+  app does not declare a child audience to Google's advertising systems.
+</p>
+
+<h2>11. How long data is kept, and how to delete it</h2>
+<ul>
+  <li><strong>Data on your phone:</strong> kept until you delete it in the app - clearing the activity log, resetting rules, removing a profile - or until you uninstall NetFence, which removes all of it.</li>
+  <li><strong>Crash and analytics reports:</strong> stop being collected the moment you switch "Help improve the app" off. Reports already sent are retained by Google under Firebase's own retention policy.</li>
+  <li><strong>Advertising data:</strong> retained by Google under its own policies. You can reset or delete your Advertising ID in your Android settings at any time.</li>
+</ul>
+<p>
+  Because the app has no accounts and nothing it sends is tied to an identity we
+  hold, there is no account for us to delete. If you have a question about data held
+  by Google rather than by this app, the links in section 4 are the correct route.
+</p>
+
+<h2>12. Security</h2>
+<p>
+  Data on your device is held in NetFence's own private application storage, which
+  other apps cannot read. Automatic cloud backup of the app's data is disabled. Your
+  PIN is stored only as a salted hash. Everything the embedded Google SDKs transmit
+  travels over encrypted HTTPS connections.
+</p>
+
+<h2>13. Changes to this policy</h2>
+<p>
+  If this policy changes, the updated version will be published at this same address
+  with a new "Last updated" date. Significant changes affecting what is collected
+  will also be reflected in the app's own Privacy Dashboard screen.
+</p>
+
+<h2>14. Contact</h2>
+<p>
+  Questions about this policy or about privacy in NetFence:
+  <a href="mailto:FILL-IN@example.com">FILL-IN@example.com</a>
+</p>
+
+<div class="note">
+  <strong>Before publishing:</strong> replace every <em>FILL IN</em> placeholder
+  (effective date, last-updated date, publisher name, and the contact email, which
+  appears in sections 2 and 14). Google Play requires a reachable contact and a
+  policy that matches your Data Safety answers.
+</div>
+
+<footer>
+  NetFence - on-device firewall. This policy describes the app published as
+  <code>com.netfence.firewall</code> on Google Play.
+</footer>
+
+</body>
+</html>
